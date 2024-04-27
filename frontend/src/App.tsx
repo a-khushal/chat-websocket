@@ -14,7 +14,7 @@ function App() {
     }
     socket.onmessage = (message) => {
       console.log("Received message: ", message.data);
-      setMessages([...messages, message.data]);
+      setMessages([...messages, message.data])
     }
     return () => {
       socket.close();
